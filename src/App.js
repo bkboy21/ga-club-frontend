@@ -4,6 +4,7 @@ import './App.scss';
 
 import Index from './pages/Index';
 import Show from './pages/Show';
+import Sneakers from "./pages/Sneakers";
 
 import NavBar from './components/NavBar';
 
@@ -15,6 +16,8 @@ function App() {
         <Route path='/' element={<Index />}/>
 
         <Route path='/sneakers/:id' element={<Show />}/>
+
+        <Route path='/sneakers' element={<Sneakers />} />
       </Routes>
     </div>
   );
