@@ -1,6 +1,31 @@
 .App {
   box-sizing: border-box;
-  text-align: center;
+
 }
 
+a {
+  text-decoration: none;
+}
 
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: black;
+  color: white;
+
+  .navLeft, .navRight {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  h1 {
+    margin: 10px;
+    padding: 3px;
+  }
+
+  a{
+    color: white;
+  }
+}
