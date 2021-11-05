@@ -30,10 +30,13 @@ const createSneak = async (data) => {
   getSneakers();
 }
 
+
+
 const deleteSneaker = async (id) => {
   await fetch(URL +'/'+ id, {
     method: "DELETE",
   });
+
   // update list of people
   getSneakers();
 }
@@ -43,4 +46,5 @@ export {
   getOneSneaker,
   createSneak,
   deleteSneaker
+
 }

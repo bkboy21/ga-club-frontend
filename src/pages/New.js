@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { useNavigate } from 'react-router-dom';
 import {createSneak} from "../services/sneakerService"
+import "./css/new.scss"
+import "./css/footer.scss"
 
 
 function New(props) {
@@ -34,47 +36,54 @@ function New(props) {
   }
 
   return (
-    <container>
-      
+  
+      <div className="form">
+        <h1>Add New Item Page</h1>
       <form onSubmit={handleSubmit}>
-        <input
+        <div className="field">
+        <input className="gredient_input"
           type="text"
           value={newForm.name}
           name="name"
           placeholder="Name"
           onChange={handleChange}
-        />
-        <input
+        /></div>
+        <div className="field">
+        <input  className="gredient_input"
           type="text"
           value={newForm.brand}
           name="brand"
           placeholder="brand"
           onChange={handleChange}
-        />
-        <input
+        /></div>
+        <div className="field">
+        <input className="gredient_input"
           type="text"
           value={newForm.description}
           name="description"
           placeholder="description"
           onChange={handleChange}
-        />
-         <input
+        /></div>
+        <div className="field">
+         <input className="gredient_input"
           type="text"
           value={newForm.price}
           name="price"
           placeholder="price"
           onChange={handleChange}
-        />
-         <input
+        /></div>
+        <div className="field">
+         <input className="gredient_input"
           type="text"
           value={newForm.image}
           name="image"
           placeholder="image"
           onChange={handleChange}
-        />
-        <button type="submit" value="Submit" >Submit</button>
+        /></div>
+        <button className="blue_button" type="submit" value="Submit" >Submit</button>
       </form>
-    </container>
+      </div>
+    
   );
 }
 

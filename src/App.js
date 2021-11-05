@@ -8,6 +8,8 @@ import Show from './pages/Show';
 import Sneakers from "./pages/Sneakers";
 
 import NavBar from './components/NavBar';
+import Footer from "./components/Footer";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -15,11 +17,12 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={<Index />}/>
+        <Route path='/cart' element={<Cart />}/>
         <Route path='/new' element={<New />}/>
         <Route path='/sneakers/:id' element={<Show />}/>
-
         <Route path='/sneakers' element={<Sneakers />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
