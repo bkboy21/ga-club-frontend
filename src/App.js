@@ -3,13 +3,18 @@ import {useState} from 'react';
 import './App.scss';
 
 import Index from './pages/Index';
-import New from './pages/New'
-import Show from './pages/Show';
 import Sneakers from "./pages/Sneakers";
+import New from './pages/New';
+import DeleteSneakers from './pages/DeleteSneakers';
+import Edit from "./pages/Edit";
+import Show from './pages/Show';
+
+
+import Cart from "./pages/Cart";
 
 import NavBar from './components/NavBar';
 import Footer from "./components/Footer";
-import Cart from "./pages/Cart";
+
 
 function App() {
   return (
@@ -17,10 +22,18 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={<Index />}/>
-        <Route path='/cart' element={<Cart />}/>
-        <Route path='/new' element={<New />}/>
-        <Route path='/sneakers/:id' element={<Show />}/>
         <Route path='/sneakers' element={<Sneakers />} />
+        <Route path='/new' element={<New />}/>
+        <Route path='/sneakers/:id/delete'
+                element={<DeleteSneakers />} />
+
+        <Route path='/sneakers/:id/edit'
+                element={<Edit />} />
+                
+        <Route path='/sneakers/:id' element={<Show />}/>
+        
+
+        <Route path='/cart' element={<Cart />}/>
       </Routes>
       <Footer />
     </div>

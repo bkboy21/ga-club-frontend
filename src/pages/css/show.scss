@@ -1,4 +1,18 @@
 
+
+// Move to app.scss
+.input{
+    width: 250px;
+    height: 25px;
+
+
+    margin: 10px 0px;
+    padding: 5px;
+}
+//
+
+
+
 .sneakShow{
     display: flex;
 
@@ -36,5 +50,26 @@
             width: 425px;
             height: 425px;
         }
+    }
+}
+
+.sneakEdit{
+    
+    .editLeft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 425px;
+        #imgInp{
+            width: 250px;
+            height: 25px;
+
+            
+
+        }
+    }
+
+    .editRight{
+        margin-top: 25px;
     }
 }
