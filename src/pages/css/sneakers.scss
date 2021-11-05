@@ -1,0 +1,46 @@
+.sneakGrid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sneak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    width: 250px;
+    height: 250px;
+
+    margin: 10px;
+    padding: 3px;
+
+    .sneakImgThumb {
+        display: flex;
+        justify-content: center;
+    }
+
+    img{
+        width: 150px;
+        height: 150px;
+    }
+
+    h4{
+        text-align: center;
+        margin: 5px 0px;
+        padding: 3px 0px;
+    }
+
+    p{
+        text-align: center;
+        margin: 5px 0px;
+        padding: 3px 0px;
+        font-size: 24px;
+    }
+}
+
+.background {
+    box-shadow: rgba(0,0,0,.3) 3px 3px 6px;
+}
+
