@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { getOneSneaker } from "../services/sneakerService";
 
+import './css/show.scss'
 
 export default function Show(props){
 
@@ -18,20 +19,32 @@ export default function Show(props){
     const loaded = () => {
         return (
             <div>
-                <div className='sneak_brand'>
-                    <h2>{sneaker.brand}</h2>
-                </div>
-                <div className='sneak'>
-                    <h1>{sneaker.name}</h1>
-                </div>
-                <div className='sneak_img'>
-                    <img src={sneaker.image} />
-                </div>
-                <div className='sneak_descrip'>
-                    <p>{sneaker.description}</p>
-                </div>
-                <div className='sneak_price'>
-                    <h2>{sneaker.price}</h2>
+                <div className='sneakShow'>
+                    <div className='showLeft'>
+                        <div className='sneak_img'>
+                            <img src={sneaker.image} />
+                        </div>
+                    </div>
+
+                    <div className='showRight'>
+                        
+                        <div className='sneak_brand'>
+                            <h2>{sneaker.brand}'s</h2>
+                        </div>
+
+                        <h1 className='sneak_name'>
+                            {sneaker.name}</h1>
+                       
+
+                        <div className='sneak_descrip'>
+                            <p>{sneaker.description}</p>
+                        </div>
+                        <div className='sneak_price'>
+                            <h1>${sneaker.price}</h1>
+                        </div>
+
+                        <button>Add to Cart</button> 
+                    </div>
                 </div>
             </div>
         );
