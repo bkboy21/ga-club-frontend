@@ -7,6 +7,7 @@ export default function Sneakers(props){
 
 
     const [sneakers, setSneakers] = useState(null);
+    const [map, setMap] = useState(null);
     
 
     async function updateSneakers() {
@@ -16,14 +17,15 @@ export default function Sneakers(props){
     useEffect(() => updateSneakers(), []);
 
     const loaded = () => {
+        
+
         return sneakers.map((sneak, i) => {
             return(
-                <div key={sneak.id} className='sneakGrid'>
+                <div key={sneak.id}>
                     <div className='sneak background'>
                         <Link to={`/sneakers/${sneak.id}`}>
-                            <div>
-                                <img src={sneak.image} 
-                                    className='sneakImgThumb' />
+                            <div className='sneakImgThumb' >
+                                <img src={sneak.image}/>
                             </div>
 
                             <div>
@@ -45,5 +47,5 @@ export default function Sneakers(props){
         return <h1>Loading...</h1>;
     };
 
-    return sneakers ? loaded() : loading();
+    return sneakers ? <div className='sneakGrid'>{loaded()}</div> : loading();
 }
