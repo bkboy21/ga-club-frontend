@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { getOneSneaker } from "../services/sneakerService";
 
+
 export default function Show(props){
 
     const [sneaker, setSneaker] = useState(null);

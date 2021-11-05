@@ -1,3 +1,4 @@
+import Sneakers from "../pages/Sneakers";
 
 
 const URL = 'http://localhost:4000/sneakers'
@@ -17,7 +18,20 @@ const getOneSneaker = async (id) => {
     return (ret);
 }
 
+const createSneak= async (data) => {
+  await fetch(URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "Application/json",
+    },
+    body: JSON.stringify(data),
+   
+  });
+  getSneakers();
+}
+
 export {
   getSneakers,
-  getOneSneaker
+  getOneSneaker,
+  createSneak
 }

@@ -3,6 +3,7 @@ import {useState} from 'react';
 import './App.scss';
 
 import Index from './pages/Index';
+import New from './pages/New'
 import Show from './pages/Show';
 import Sneakers from "./pages/Sneakers";
 
@@ -14,7 +15,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={<Index />}/>
-
+        <Route path='/new' element={<New />}/>
         <Route path='/sneakers/:id' element={<Show />}/>
 
         <Route path='/sneakers' element={<Sneakers />} />
