@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+
+
+.index{ 
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.img_sneakers{ 
+    display: flex;
+    justify-content: center;
+}
+
+.shop_mens{ 
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 7px;
+    padding: 5px;
+}
+
+.shop_wmns{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 7px;
+    padding: 5px;
+}
+
+.shop_kids{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 7px; 
+    padding: 5px;
+
+}
