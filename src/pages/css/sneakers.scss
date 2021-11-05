@@ -1,0 +1,22 @@
+
+.sneak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    width: 250px;
+    height: 250px;
+
+    margin: 10px;
+    padding: 3px;
+}
+
+.background {
+    box-shadow: rgba(0,0,0,.3) 2px 2px 2px;
+}
+
+.sneakImgThumb{
+    width: 150px;
+    height: 150px;
+}
