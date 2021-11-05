@@ -30,8 +30,21 @@ const createSneak= async (data) => {
   getSneakers();
 }
 
+
+const deletePeople = async id => {
+  // make delete request to create people
+  await fetch(URL + id, {
+    method: "DELETE",
+  })
+  // update list of people
+  getSneakers();
+}
+
+
+
 export {
   getSneakers,
   getOneSneaker,
-  createSneak
+  createSneak,
+  deletePeople
 }
