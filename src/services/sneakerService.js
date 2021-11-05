@@ -18,7 +18,7 @@ const getOneSneaker = async (id) => {
     return (ret);
 }
 
-const createSneak= async (data) => {
+const createSneak = async (data) => {
   await fetch(URL, {
     method: "POST",
     headers: {
@@ -30,8 +30,17 @@ const createSneak= async (data) => {
   getSneakers();
 }
 
+const deleteSneaker = async (id) => {
+  await fetch(URL +'/'+ id, {
+    method: "DELETE",
+  });
+  // update list of people
+  getSneakers();
+}
+
 export {
   getSneakers,
   getOneSneaker,
-  createSneak
+  createSneak,
+  deleteSneaker
 }
