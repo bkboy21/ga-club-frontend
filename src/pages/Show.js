@@ -16,6 +16,20 @@ export default function Show(props){
 
     useEffect(() => updateSneakers(), []);
 
+
+    function handleClick(){
+        console.log(props.cart.current)
+        props.cart.current.push({
+            name: sneaker.name,
+            brand: sneaker.brand,
+            description: sneaker.description,
+            price: sneaker.price,
+            image: sneaker.image
+        })
+
+        console.log(props.cart.current)
+    }
+
     const loaded = () => {
         return (
             <div>
@@ -43,7 +57,7 @@ export default function Show(props){
                             <h1>${sneaker.price}</h1>
                         </div>
 
-                        <button>Add to Cart</button> 
+                        <button onClick={handleClick}>Add to Cart</button> 
                     </div>
                 </div>
             </div>
