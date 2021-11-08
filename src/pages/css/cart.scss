@@ -20,6 +20,19 @@
             margin: 10px 0px;
             padding: 3px;
 
+            .itemRemove{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: -35px;
+
+                button{
+                    width: 75px;
+                    height: 25px;
+                }
+            }
+
             .imgSThumb{
                 width: 100px;
                 height: 100px;
@@ -67,6 +80,17 @@
     td{
         margin: 5px;
     }
+
+    
+}
+
+.emptyCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 150px 0px;
+    width: 300px;
 }
 
 .center{
