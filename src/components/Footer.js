@@ -7,13 +7,13 @@ export default function Footer() {
 		<footer class="footer-distributed">
 
 			<div class="footer-left">
-				<h3>About<span>GA Club</span></h3>
+				<h3>About <span>GA Club</span></h3>
 
 				<p class="footer-links">
-					<a href="https://github.com/AKeyframe">Alec K. </a>
-					|
+					<a href="https://github.com/AKeyframe">Alec K.</a>
+					--
 					<a href="https://github.com/bkboy21">Nir E. </a>
-					|
+					--
 					<a href="https://github.com/joshbolanos7">Josh B. </a>
 				</p>
 
