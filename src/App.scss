@@ -14,9 +14,22 @@ a {
 nav {
   display: flex;
   justify-content: space-between;
-
-  background-color: black;
+  border: solid 1px #33383b;
+  font-size: 20px;
+  /*border-radius*/
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-color:  #33383b;
+  /*box-shadow*/
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  
   color: white;
+  
 
   .navLeft, .navRight {
     display: flex;
