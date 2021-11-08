@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import {useState} from 'react';
+import {useRef} from 'react';
 import './App.scss';
 
 import Index from './pages/Index';
@@ -17,6 +17,11 @@ import Footer from "./components/Footer";
 
 
 function App() {
+
+  let cart = useRef();
+  cart.current = []
+
+
   return (
     <div className="App">
       <NavBar />
@@ -30,10 +35,12 @@ function App() {
         <Route path='/sneakers/:id/edit'
                 element={<Edit />} />
                 
-        <Route path='/sneakers/:id' element={<Show />}/>
+        <Route path='/sneakers/:id' element={<Show cart={cart}/>}/>
         
 
-        <Route path='/cart' element={<Cart />}/>
+        <Route path='/cart' element={
+              <Cart cart={cart}/>}/>
+
       </Routes>
       <Footer />
     </div>
