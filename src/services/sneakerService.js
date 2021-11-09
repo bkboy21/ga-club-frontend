@@ -1,8 +1,8 @@
 import Sneakers from "../pages/Sneakers";
 
 
-const URL = 'http://localhost:4000/sneakers'
-// const URL = "" // for when we deploy
+//const URL = 'http://localhost:4000/sneakers'
+const URL = "https://ga-club.herokuapp.com/sneakers" // for when we deploy
 
 const getSneakers = async () => {
     const response = await fetch(URL);
