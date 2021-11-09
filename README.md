@@ -1,4 +1,39 @@
-# Getting Started with Create React App
+# Welcome to GA Club
+Developers: 
+- Nir E. 
+- Alec K. 
+- Josh B. 
+
+Welcome to our E-commerce sneakers app. The app is a full-stack app with full CRUD functions. Backend was created with Ruby and Rails. Frontend was built with React JS. 
+
+## Technologies Used: 
+- React JS 
+- Ruby 
+- Rails
+- SASS
+- CSS
+- HTML 
+- Javascript
+
+
+## Screenshots:
+
+<a href="https://imgur.com/QLvOPrD"><img src="https://i.imgur.com/RPG9hF6.png" title="source: imgur.com" /></a>
+<br>
+<a href="https://imgur.com/QWywi5R"><img src="https://i.imgur.com/j4HLR2y.png" title="source: imgur.com" /></a>
+<br>
+<a href="https://imgur.com/QWywi5R"><img src="https://i.imgur.com/cF4mdMs.png" title="source: imgur.com" /></a>
+<br>
+<a href="https://imgur.com/QWywi5R"><img src="https://i.imgur.com/fkGmhjm.png" title="source: imgur.com" /></a>
+
+
+## Get Started: 
+[URL to Heroku deployment](https://ga-club-frontend.herokuapp.com/)
+
+# Future Enhancements: 
+
+For future enhancements, we would like to have our filters work, have user authentication, have a working carousel, and have different pages sorted by brands. 
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +102,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
