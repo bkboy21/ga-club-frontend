@@ -1,8 +1,8 @@
 import Sneakers from "../pages/Sneakers";
 
 
-const URL = 'http://localhost:4000/sneakers'
-// const URL = "" // for when we deploy
+//const URL = 'http://localhost:4000/sneakers'
+const URL = "https://ga-club.herokuapp.com/sneakers" // for when we deploy
 
 const getSneakers = async () => {
     const response = await fetch(URL);
@@ -30,28 +30,6 @@ const createSneak = async (data) => {
   getSneakers();
 }
 
-const updateSneaker = async (data, id) => {
-    console.log('updating');
-    console.log(data);
-    let subData = {
-      name: data.name,
-      brand: data.brand,
-      description: data.description,
-      price: data.price,
-      image: data.image
-    }
-
-    await fetch(URL +'/'+ id, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "Application/json",
-      },
-      body: JSON.stringify(subData),
-    });
-    getSneakers();
-  }
-
-
 
 
 const deleteSneaker = async (id) => {
@@ -67,7 +45,6 @@ export {
   getSneakers,
   getOneSneaker,
   createSneak,
-  updateSneaker,
   deleteSneaker
 
 }
