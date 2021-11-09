@@ -18,6 +18,7 @@ export default function Show(props){
 
 
     function handleClick(){
+        alert("Item Added To Cart");
         console.log(props.cart.current)
         props.cart.current.push({
             name: sneaker.name,

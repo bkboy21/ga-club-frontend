@@ -19,11 +19,16 @@
     .sneakImgThumb {
         display: flex;
         justify-content: center;
+        transition: 0.5s;
     }
 
     img{
         width: 150px;
         height: 150px;
+    }
+
+    .sneakImgThumb:hover{
+        transform: scale(1.4);
     }
 
     h4{
