@@ -5,10 +5,18 @@ export default function NavBar(){
     return(
         <nav>
             <div className='navLeft'>
-                <Link to='/sneakers/1'><h1>GA Club</h1></Link>
+                <Link to='/'>
+                    <h1>GA Club</h1>
+                </Link>
             </div>
             <div className='navRight'>
-                <h2>Cart</h2>
+                <Link to='/sneakers'>
+                    <h1>Browse</h1>
+                </Link>
+                
+                <Link to='/cart'>
+                    <h1>Cart</h1>
+                </Link>
             </div>
         </nav>
     );
