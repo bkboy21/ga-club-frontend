@@ -30,6 +30,28 @@ const createSneak = async (data) => {
   getSneakers();
 }
 
+const updateSneaker = async (data, id) => {
+    console.log('updating');
+    console.log(data);
+    let subData = {
+      name: data.name,
+      brand: data.brand,
+      description: data.description,
+      price: data.price,
+      image: data.image
+    }
+
+    await fetch(URL +'/'+ id, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "Application/json",
+      },
+      body: JSON.stringify(subData),
+    });
+    getSneakers();
+  }
+
+
 
 
 const deleteSneaker = async (id) => {
@@ -45,6 +67,7 @@ export {
   getSneakers,
   getOneSneaker,
   createSneak,
+  updateSneaker,
   deleteSneaker
 
 }
