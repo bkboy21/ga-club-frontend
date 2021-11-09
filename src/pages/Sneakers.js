@@ -9,7 +9,6 @@ export default function Sneakers(props) {
 
 
     const [sneakers, setSneakers] = useState(null);
-    const [map, setMap] = useState(null);
     
 
     async function updateSneakers() {
@@ -21,26 +20,43 @@ export default function Sneakers(props) {
     const loaded = () => {
         
 
-        return sneakers.map((sneak, i) => {
-            return (
-                <div key={sneak.id}>
-                    <div className='sneak background'>
-                        <Link to={`/sneakers/${sneak.id}`}>
-                            <div className='sneakImgThumb' >
-                                <img src={sneak.image}/>
-                            </div>
-
-                            <div>
-                                <h4>{sneak.name}</h4>
-                            </div>
-                        </Link>
-                            <div>
-                                <p>${sneak.price}</p>
-                            </div>
+        return (
+            <div>
+                <div className='sneakIndex'>
+                    <div className='filter'>
+                        <Filter />
                     </div>
+                    <div className='sneakers'>
+                        {sneakers.map((sneak, i) => {
+                            return (
+                                <div key={sneak.id}>
+                                    <div className='sneak background'>
+                                        <Link to={`/sneakers/${sneak.id}`}>
+                                            <div className='sneakImgThumb' >
+                                                <img src={sneak.image}/>
+                                            </div>
+
+                                            <div>
+                                                <h4>{sneak.name}</h4>
+                                            </div>
+                                        </Link>
+                                            <div>
+                                                <p>${sneak.price}</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+
                 </div>
-            );
-        });
+            </div>
+        ); 
+       
+            
+            
+            
+        
     }
 
 
@@ -49,5 +65,5 @@ export default function Sneakers(props) {
         return <h1>Loading...</h1>;
     };
 
-    return sneakers ? <div className='sneakGrid'>{loaded()} <Filter /> </div> : loading();
+    return sneakers ? <div className='sneakGrid'>{loaded()}</div> : loading();
 }

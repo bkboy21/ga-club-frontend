@@ -4,6 +4,25 @@
     flex-wrap: wrap;
 }
 
+
+.sneakIndex{
+    display:flex;
+    justify-content: center;
+
+    margin: 20px;
+
+    .sneakers{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .filterComp{
+        margin-left:40px;
+    }
+}
+
+
 .sneak {
     display: flex;
     flex-direction: column;
@@ -15,6 +34,8 @@
 
     margin: 10px;
     padding: 3px;
+
+    transition: .25s;
 
     .sneakImgThumb {
         display: flex;
@@ -40,22 +61,79 @@
     }
 }
 
+.sneak:hover{
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 100%;
+}
+
 .background {
     box-shadow: rgba(0,0,0,.3) 3px 3px 6px;
 }
 
+.filterComp{
+    max-width: 180px;
+
+    button{
+        width: 75px;
+        height: 30px;
+        margin: 5px;
+        padding: 1px;
+        font-size: 14px;
+    }
+}
+
+
 .FilterBrand { 
-    display: grid;
+    display: flex;
+    flex-direction: column;
+   
     position: relative;
 
-    border-style: solid;
-    border-color: #3F71EA;
+    
+
+    width: 175px;
+
+    margin-top: 25px;
+
+   
 }
 
 .FilterGender {
     display: grid;
     position: relative;
 
-    border-style: solid;
-    border-color: #3F71EA;
+    width: 180px;
+
+    margin: 30px 0px; 
+    padding: 5px;
+   
+}
+
+.FilterPrice{
+    width: 200px;
+    padding: 5px;
+    input[type=range]{
+        width:100px;
+    }
+}
+
+.FilterColor{
+    display: flex;
+    flex-direction: column;
+
+    width: 180px;
+
+    padding: 5px;
+}
+
+.filLabel{
+    display: flex;
+    justify-content: center;
+}
+
+.choices{
+    display:flex;
+    flex-wrap: wrap;
 }

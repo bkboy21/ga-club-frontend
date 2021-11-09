@@ -82,7 +82,7 @@ function New(props) {
             placeholder="Image"
             onChange={handleChange}
           /></div>
-        <button className="blue_button" type="submit" value="Submit" >Submit</button>
+        <button id='newButton' className="blue_button" type="submit" value="Submit" >Submit</button>
       </form>
     </div>
 

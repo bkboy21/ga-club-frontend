@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
+import { useNavigate } from "react-router";
 import { getOneSneaker } from "../services/sneakerService";
 
 import './css/show.scss'
@@ -9,6 +10,7 @@ export default function Show(props){
 
     const [sneaker, setSneaker] = useState(null);
     const params = useParams();
+    const nav = useNavigate();
 
 
     async function updateSneakers() {
@@ -19,7 +21,7 @@ export default function Show(props){
 
 
     function handleClick(){
-        console.log(props.cart.current)
+   
         props.cart.current.push({
             name: sneaker.name,
             brand: sneaker.brand,
@@ -28,7 +30,7 @@ export default function Show(props){
             image: sneaker.image
         })
 
-        console.log(props.cart.current)
+       nav('/cart');
     }
 
     const loaded = () => {
