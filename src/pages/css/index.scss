@@ -4,11 +4,34 @@
 
 .index{ 
     font-family: 'Titillium Web', sans-serif;
+
+    .displayImg{
+        width: 350px;
+        height: 400px;
+    }
+
+    .cardImgs{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        h2{
+            margin: 5px 0px;
+            text-align: center;
+            text-shadow: rgba(0,0,0,.4) 1px 1px 3px;
+        }
+
+        h2:hover{
+            color: #3798db;
+        }
+    }
 }
 
 .img_sneakers{ 
-    display: flex;
-    justify-content: center;
+    width: 98vw;
+    height: 98vh;
+    background-image:url('https://image.goat.com/crop/3000/attachments/micropost_pictures/images/014/476/200/original/temp1536163748.jpeg');
+    background-position: center;
 }
 
 .shop_mens{ 
@@ -17,6 +40,8 @@
     justify-content: center;
     margin: 7px;
     padding: 5px;
+    transition: .25s;
+    opacity: 100%;
 }
 
 .shop_wmns{
@@ -25,6 +50,7 @@
     justify-content: center;
     margin: 7px;
     padding: 5px;
+    transition: .25s;
 }
 
 .shop_kids{
@@ -32,5 +58,19 @@
     flex-direction: column;
     margin: 7px; 
     padding: 5px;
+    transition: .20s;
 
 }
+
+.displayImg{
+    margin-top: 15px;
+    transition: .25s;
+}
+
+  .displayImg:hover{
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 100%;
+    
+  }

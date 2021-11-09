@@ -1,5 +1,6 @@
 import "./css/cart.scss"
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useEffect } from "react/cjs/react.development";
 
 
@@ -103,6 +104,9 @@ export default function Cart(props){
                 <div className='cart'>
                     <div className='emptyCart' >
                         <h1>Your Cart Is Empty</h1>
+                        <p>Check out some  
+                                    <Link to='/sneakers'> shoes...</Link>
+                        </p>
                     </div>
                     
 
@@ -128,6 +132,10 @@ export default function Cart(props){
                                 <tr>
                                     <td><h3>Estimated Tax:</h3></td>
                                     <td><h3></h3></td>
+                                </tr>
+                                <tr>
+                                    <td><hr /></td>
+                                    <td></td>
                                 </tr>
                                 <tr>
                                     <td><h2>Order Total:</h2></td>
