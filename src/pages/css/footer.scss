@@ -41,6 +41,25 @@ footer{
 	bottom: 0;
 }
 
+.team{
+	color: white;
+	text-align: center;
+
+	margin: 10px 0px;
+
+	a{
+		margin: 10px;
+	}
+}
+
+.footer-center{
+
+	
+	p, a, span{
+		text-align: center;
+	}
+}
+
 @media (max-height:800px){
 	footer { position: static; }
 	header { padding-top:40px; }

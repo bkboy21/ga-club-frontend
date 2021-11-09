@@ -10,6 +10,10 @@ export default function NavBar(){
                 </Link>
             </div>
             <div className='navRight'>
+                <Link to='/sneakers'>
+                    <h1>Browse</h1>
+                </Link>
+                
                 <Link to='/cart'>
                     <h1>Cart</h1>
                 </Link>

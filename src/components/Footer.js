@@ -8,14 +8,10 @@ export default function Footer() {
 
 			<div class="footer-left">
 				<h3>About <span>GA Club</span></h3>
-
-				<p class="footer-links">
-					<a href="https://github.com/AKeyframe">Alec K.</a>
-					--
-					<a href="https://github.com/bkboy21">Nir E. </a>
-					--
-					<a href="https://github.com/joshbolanos7">Josh B. </a>
-				</p>
+				<p class="footer-company-about">
+					
+					We offer high end sneakers at a competitive price the competition can't beat.</p>
+				
 
 				<p class="footer-company-name">© 2021 GA CLUB and SNEAKERS Ltd.</p>
 			</div>
@@ -40,20 +36,29 @@ export default function Footer() {
 				</div>
 			</div>
 			<div class="footer-right">
-				<p class="footer-company-about">
-					<span>About the company</span>
-					We offer high end sneakers at a competitive price the competition can't beat.</p>
-				<div class="footer-icons">
-					<a href="https://github.com/AKeyframe">Alec K. </a>
-					|
-					<a href="https://github.com/bkboy21">Nir E. </a>
-					|
-					<a href="https://github.com/joshbolanos7">Josh B. </a>
-					{/* <a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-instagram"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-youtube"></i></a> */}
+				
+				<div >
+				<div className="teamLinks">
+						
+						
+						<div className='team'>
+							<h2>Nir E. </h2>
+							<a href="https://github.com/bkboy21">Github</a>
+							<a href="#">Linkedin</a>
+						</div>
+
+						<div className='team'>
+							<h2>Josh B. </h2>
+							<a href="https://github.com/joshbolanos7">Github</a>
+							<a href="https://www.linkedin.com/in/joshua-bolanos7/">Linkedin</a>
+						</div>
+
+						<div className='team'>
+							<h2>Alec K. </h2>
+							<a href="https://github.com/AKeyframe">Github</a>
+							<a href="https://www.linkedin.com/in/alec-kagebein/">Linkedin</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>

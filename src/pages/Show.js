@@ -54,7 +54,7 @@ export default function Show(props){
                             <p>{sneaker.description}</p>
                         </div>
                         <div className='sneak_price'>
-                            <h1>${sneaker.price}</h1>
+                            <h2>Price: ${sneaker.price}</h2>
                         </div>
 
                         <button onClick={handleClick}>Add to Cart</button> 
