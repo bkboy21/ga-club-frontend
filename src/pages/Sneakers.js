@@ -1,9 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import './css/sneakers.scss'
 import { getSneakers } from "../services/sneakerService";
 
-export default function Sneakers(props){
+import Filter from "../components/Filter";
+
+export default function Sneakers(props) {
 
 
     const [sneakers, setSneakers] = useState(null);
@@ -20,7 +22,7 @@ export default function Sneakers(props){
         
 
         return sneakers.map((sneak, i) => {
-            return(
+            return (
                 <div key={sneak.id}>
                     <div className='sneak background'>
                         <Link to={`/sneakers/${sneak.id}`}>
@@ -43,9 +45,9 @@ export default function Sneakers(props){
 
 
     const loading = () => {
-       
+
         return <h1>Loading...</h1>;
     };
 
-    return sneakers ? <div className='sneakGrid'>{loaded()}</div> : loading();
+    return sneakers ? <div className='sneakGrid'>{loaded()} <Filter /> </div> : loading();
 }

@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import { getOneSneaker } from "../services/sneakerService";
 
 import './css/show.scss'
+import Filter from "../components/Filter";
 
 export default function Show(props){
 

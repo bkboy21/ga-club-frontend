@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import './css/index.scss'
-
+import Carousel from "./Carousel";
 
 export default function Index(props) {
     return (
         <div>
+            {/* <div className="carousel">
+                <Carousel />
+            </div> */}
             <div className='index'>
                 <div className="img_sneakers">
                     &nbsp;
