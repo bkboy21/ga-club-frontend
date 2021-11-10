@@ -44,7 +44,7 @@ export default function Footer() {
 						<div className='team'>
 							<h2>Nir E. </h2>
 							<a href="https://github.com/bkboy21">Github</a>
-							<a href="#">Linkedin</a>
+							<a href="https://www.linkedin.com/in/nir-elias/">Linkedin</a>
 						</div>
 
 						<div className='team'>
